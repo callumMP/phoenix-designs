@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.biography, .contact, .clients p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5% 0 5%;
+}
+.biography img {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos,
+.art {
+  background-color: black;
+}
+.clients-images,
+.photos,
+.art {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.client-images img,
+.photos img,
+.art img {
+  width: 30%;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5% 0 5%;
+}
+.contact img {
+  display: none;
+}
+#top-button{
+    display: flex;
+    justify-content: center;
+}
+#top-button ion-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .contact img {
+    display: flex;
+    width: 50%;
+  }
+  .contact {
+    color: white;
+    background-color: black;
+  }
+}
